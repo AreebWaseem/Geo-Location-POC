@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="693" id="KGk-i7-Jjw" customClass="jobsImagesTableViewCell" customModule="geolocpoc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="823" height="693"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="823" height="692.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repairing" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-gQ-nnJ">
+                        <rect key="frame" x="283.5" y="71" width="256" height="256"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NQX-gQ-nnJ" secondAttribute="height" multiplier="1:1" id="3Yb-YR-tiQ"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ief-es-qVJ">
+                        <rect key="frame" x="393" y="158.5" width="37" height="37"/>
+                        <color key="color" red="0.2038246095" green="0.47220546009999997" blue="0.96475356820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="NQX-gQ-nnJ" secondAttribute="bottom" constant="16" id="EDB-ea-ota"/>
+                    <constraint firstItem="NQX-gQ-nnJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="SM6-tY-09a"/>
+                    <constraint firstItem="NQX-gQ-nnJ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="a5e-lq-fU5"/>
+                    <constraint firstItem="ief-es-qVJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="njc-ga-wtP"/>
+                    <constraint firstItem="NQX-gQ-nnJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yGq-q3-TfR"/>
+                    <constraint firstItem="ief-es-qVJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ygm-KT-YdA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ind_job_image" destination="NQX-gQ-nnJ" id="dCL-tE-R0M"/>
+                <outlet property="progress_bar" destination="ief-es-qVJ" id="k7N-4e-s2u"/>
+            </connections>
+            <point key="canvasLocation" x="502.17391304347831" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="repairing" width="256" height="256"/>
+    </resources>
+</document>
